@@ -30,4 +30,10 @@ export const filehandling= ()=>{
         console.log('Read file:',data);
         
     })
+
+    const fullPath = path.resolve("path","sample.txt")
+    console.log("Absolute Path:",fullPath);
+
+    const filePath = "./path/sample.txt"
+    console.log("Relative Path:",filePath);
 }
