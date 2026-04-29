@@ -17,7 +17,7 @@ const Dashboard = () => {
 
     } catch (error) {
 
-      console.log("Error",error.response.data.msg);
+      console.log("Error",error.response.data.msg)
 
       localStorage.removeItem("jwttoken")
       navigate("/")
@@ -32,7 +32,7 @@ const Dashboard = () => {
    <>
     <div>
       <h1>Dashboard</h1>
-        <p>Email:{user.email}</p>
+      {user ?<p>Email:{user.email}</p>:<p>No user find</p>}
     </div>
    </>
   )
